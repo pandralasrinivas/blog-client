@@ -63,9 +63,9 @@ function Login() {
     <div className="login-page">
       <div className="glass-card">
         {/* Logo at the top */}
-        <div className="https://img.freepik.com/premium-vector/word-concept-color-geometric-shapes-blog_205544-12899.jpg?semt=ais_hybrid&w=740" style={{ textAlign: 'center', marginBottom: 24 }}>
+        <div className="login-logo" style={{ textAlign: 'center', marginBottom: 24 }}>
           {/* Use an image or text as your logo */}
-          <img src="/logo192.png" alt="Logo" className="logo-img" style={{ height: 56 }} />
+          <img src="https://img.freepik.com/premium-vector/word-concept-color-geometric-shapes-blog_205544-12899.jpg?semt=ais_hybrid&w=740" alt="Logo" className="logo-img" style={{ height: 56 }} />
           {/* Or: <span className="logo-text">ZuAI</span> */}
         </div>
         <h2>Login</h2>
