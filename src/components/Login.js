@@ -34,7 +34,7 @@ function Login() {
 
     try {
       // This sends formData as JSON in the request body
-      const response = await axios.post('http://localhost:5000/login', formData);
+      const response = await axios.post('https://blog-server1-nh16.onrender.com/login', formData);
       Cookie.set('token', response.data.token, { expires: 1 });
       Cookie.set('email',response.data.email,{expires:1}) // expires in 7 days
       window.location.href = '/dashboard';

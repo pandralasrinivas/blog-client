@@ -1,7 +1,7 @@
 import axios from 'axios';
 import Cookie from 'js-cookie';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://blog-server1-nh16.onrender.com';
 export const getPosts = () => {
     return axios.get(`${API_URL}/posts`);
 };

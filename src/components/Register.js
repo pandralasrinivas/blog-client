@@ -44,7 +44,7 @@ function Register() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/register', formData);
+      const response = await axios.post('https://blog-server1-nh16.onrender.com/register', formData);
       setSuccess('Registration successful! You can now log in.');
       setFormData({ fullname: '', username: '', email: '', password: '', confirmPassword: '' });
     } catch (err) {

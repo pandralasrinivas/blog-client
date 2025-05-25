@@ -17,7 +17,7 @@ function Dashboard() {
   const fetchBlogs = async () => {
     try {
       const token = Cookie.get('token');
-      const res = await axios.get('http://localhost:5000/my-posts', {
+      const res = await axios.get('https://blog-server1-nh16.onrender.com/my-posts', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -35,7 +35,7 @@ function Dashboard() {
       try {
         const token = Cookie.get('token');
         await axios.delete(
-          `http://localhost:5000/posts/${id}`,
+          `https://blog-server1-nh16.onrender.com/posts/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`
