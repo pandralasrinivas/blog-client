@@ -1,0 +1,99 @@
+.dashboard {
+  padding: 40px;
+  background: #000000;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dashboard h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 20px;
+}
+
+.blog-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.blog-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.blog-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card-actions button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.card-actions button:hover {
+  opacity: 0.9;
+}
+
+.card-actions .edit {
+  color: #fff;
+    background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.card-actions .delete {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+}
+
+.card-actions button:first-child {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.add-blog-btn {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.2s;
+}
+
+.add-blog-btn:hover {
+  background: linear-gradient(to left, #00c6ff, #0072ff);
+  transition: background 0.3s;
+}
